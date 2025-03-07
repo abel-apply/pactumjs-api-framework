@@ -1,0 +1,31 @@
+{
+  "name": "pactumjs-api-framework",
+  "version": "1.0.0",
+  "description": "API testing framework using PactumJS, Cucumber, and Typescript",
+  "scripts": {
+    "test": "cucumber-js || true",
+    "report": "ts-node src/utils/reportGenerator.ts",
+    "test:report": "npm test && npm run report",
+    "generate-docs": "ts-node src/support/generate-step-docs.ts && open docs/steps.html"
+  },
+  "keywords": [
+    "pactum",
+    "cucumber",
+    "typescript",
+    "api",
+    "testing"
+  ],
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.1.0",
+    "@cucumber/pretty-formatter": "^1.0.1",
+    "@types/cucumber": "^7.0.3",
+    "@types/glob": "^8.1.0",
+    "@types/node": "^22.10.1",
+    "cucumber-html-reporter": "^7.2.0",
+    "glob": "^11.0.0",
+    "open": "^10.1.0",
+    "pactum": "^3.7.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
